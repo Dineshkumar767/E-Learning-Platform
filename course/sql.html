@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL (Structured Query Language)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>SQL (Structured Query Language)</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>SQL (Structured Query Language) is a programming language designed for managing and manipulating
+                relational databases.
+                It provides a standardized way to interact with databases, allowing users to store, retrieve, update,
+                and delete data.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Data Definition Language (DDL): SQL includes commands for creating, altering, and deleting database
+                    structures, such as tables, indexes, and views.</li>
+                <li>Data Manipulation Language (DML): SQL provides commands for manipulating data within the database,
+                    such as inserting, updating, and deleting records.</li>
+                <li>Data Query Language (DQL): SQL allows users to retrieve data from a database using powerful query
+                    capabilities, including filtering, sorting, and joining multiple tables.</li>
+                <li>Data Control Language (DCL): SQL includes commands for managing user access rights and permissions,
+                    ensuring data security and integrity.</li>
+                <li>Transaction Control: SQL supports transactions, allowing users to group multiple database operations
+                    into atomic units of work, ensuring consistency and reliability.</li>
+                <li>Database Administration: SQL provides tools and commands for managing databases, including creating
+                    backups, optimizing performance, and configuring security settings.</li>
+            </ul>
+            <h2>Code Example</h2>
+            <pre><code>
+-- Create a table
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(50),
+    ContactEmail VARCHAR(50)
+);
+
+-- Insert data into the table
+INSERT INTO Customers (CustomerID, CustomerName, ContactEmail)
+VALUES (1, 'John Doe', 'john@example.com');
+
+-- Retrieve data from the table
+SELECT * FROM Customers;
+            </code></pre>
+            <p>The above example demonstrates some common SQL commands. It creates a table named "Customers" with
+                columns for CustomerID, CustomerName, and ContactEmail. It then inserts a record into the table and
+                retrieves data using a SELECT statement.</p>
+
+            <h2>Conclusion</h2>
+            <p>SQL is a fundamental language for interacting with relational databases, providing a powerful and
+                standardized way to manage data. Its features encompass data definition, manipulation, query
+                capabilities, access control, transaction control, and database administration. Understanding SQL is
+                essential for anyone working with databases and plays a crucial role in building and maintaining
+                data-driven applications.</p>
+
+            <h2>Explore Further</h2>
+            <p>Continue your exploration of SQL by diving deeper into advanced topics, practicing with real-world
+                scenarios, and staying updated on industry best practices. Here are some suggested steps:</p>
+            <ul>
+                <li>Explore database-specific documentation for platforms such as <a href="https://www.mysql.com/"
+                        target="_blank">MySQL</a>, <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>,
+                    or <a href="https://www.microsoft.com/en-us/sql-server" target="_blank">Microsoft SQL Server</a>.
+                </li>
+                <li>Practice SQL queries on online platforms like <a href="https://www.w3schools.com/sql/"
+                        target="_blank">W3Schools SQL Tutorial</a>.</li>
+                <li>Join SQL forums and communities to connect with other database enthusiasts and seek assistance.</li>
+                <li>Explore advanced SQL topics such as indexing, optimization, and stored procedures to enhance your
+                    database management skills.</li>
+            </ul>
+        </div>
+    </div>
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays and Their Manipulation</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="blog1.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/BLOGS/blogs_main.html">
+      <i class="fas fa-home" title="Home"> HOME </i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/loginpage.html">
+            <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+          </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">
+            <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">
+            <i class="fas fa-info-circle" title="About"> ABOUT </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1>Arrays and Their Manipulation</h1>
+    <p>JavaScript arrays are powerful data structures that allow you to store and manipulate multiple values in a
+      single variable. They are widely used in web development and provide various methods for manipulation.</p>
+  </header>
+  <div class="container">
+    <main>
+      <section>
+        <h2>Array Creation</h2>
+        <p>An array can be created using the array literal syntax or the Array constructor:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3, 4, 5]; // Using array literal
+let myArray = new Array(1, 2, 3, 4, 5); // Using Array constructor</code></pre>
+      </section>
+
+      <section>
+        <h2>Accessing Array Elements</h2>
+        <p>You can access individual elements of an array using their zero-based index:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3, 4, 5];
+console.log(myArray[0]); // Output: 1
+console.log(myArray[2]); // Output: 3</code></pre>
+      </section>
+
+      <section>
+        <h2>Modifying Array Elements</h2>
+        <p>Array elements can be modified by assigning new values to specific indices:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3, 4, 5];
+myArray[2] = 10;
+console.log(myArray); // Output: [1, 2, 10, 4, 5]</code></pre>
+      </section>
+
+      <section>
+        <h2>Array Length</h2>
+        <p>The length property returns the number of elements in an array:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3, 4, 5];
+console.log(myArray.length); // Output: 5</code></pre>
+      </section>
+
+      <section>
+        <h2>Adding and Removing Array Elements</h2>
+        <p>JavaScript provides methods to add or remove elements from an array:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3];
+myArray.push(4); // Add element to the end
+console.log(myArray); // Output: [1, 2, 3, 4]
+
+let removedElement = myArray.pop(); // Remove last element
+console.log(removedElement); // Output: 4
+
+myArray.unshift(0); // Add element to the beginning
+console.log(myArray); // Output: [0, 1, 2, 3]
+
+let removedFirstElement = myArray.shift(); // Remove first element
+console.log(removedFirstElement); // Output: 0</code></pre>
+      </section>
+
+      <section>
+        <h2>Slicing and Splicing Arrays</h2>
+        <p>The slice method extracts a portion of an array into a new array:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3, 4, 5];
+let newArray = myArray.slice(1, 4);
+console.log(newArray); // Output: [2, 3, 4]</code></pre>
+
+        <p>The splice method can be used to add, remove, or replace elements in an array:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3, 4, 5];
+myArray.splice(2, 1); // Remove one element at index 2
+console.log(myArray); // Output: [1, 2, 4]
+
+myArray.splice(1, 0, 6, 7); // Add elements at index 1
+console.log(myArray); // Output: [1, 6, 7, 2, 4]
+
+myArray.splice(3, 1, 8, 9); // Replace one element at index 3
+console.log(myArray); // Output: [1, 6, 7, 8, 9, 4]</code></pre>
+      </section>
+
+      <section>
+        <h2>Array Iteration</h2>
+        <p>Arrays can be iterated using loops or higher-order methods like forEach, map, filter, and reduce:</p>
+        <pre><code class="javascript">let myArray = [1, 2, 3, 4, 5];
+
+// Using for loop
+for (let i = 0; i < myArray.length; i++) {
+  console.log(myArray[i]);
+}
+
+// Using forEach method
+myArray.forEach(function(element) {
+  console.log(element);
+});
+
+// Using map method
+let doubledArray = myArray.map(function(element) {
+  return element * 2;
+});
+console.log(doubledArray);
+
+// Using filter method
+let filteredArray = myArray.filter(function(element) {
+  return element > 2;
+});
+console.log(filteredArray);
+
+// Using reduce method
+let sum = myArray.reduce(function(acc, curr) {
+  return acc + curr;
+}, 0);
+console.log(sum);</code></pre>
+      </section>
+    </main>
+
+  </div>
+
+  <section class="footer">
+    <h4 style="color: aliceblue;">ABOUT US</h4>
+    <P>Students from ADIT Vidyanagar Hyderabad <br>
+      Guidence by NAVEEN SIR</P>
+    <div class="icons">
+      <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+      <a href="" class="google"><i class="fab fa-google"></i></a>
+      <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+    </div>
+    <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+  </section>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

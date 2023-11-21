@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>How to Build a Responsive Navigation Bar with a Dropdown Menu using JavaScript</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* CSS code for the navigation bar and dropdown menu */
+    /* ... */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .content {
+      margin-bottom: 20px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgb(62, 98, 245);
+      overflow: hidden;
+    }
+
+    .navbar .navbar-brand {
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+    .navbar .navbar-toggler-icon {
+      background-color: black !important;
+    }
+
+    .navbar .nav-item {
+      margin-right: 10px;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      font-size: 20px;
+    }
+
+    /* Increase the size of navbar icons */
+    .navbar .nav-link i {
+      font-size: 24px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      transition: color 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 25px;
+
+    }
+
+    .navbar .nav-link:hover {
+      color: black !important;
+      text-decoration: underline;
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+
+    }
+
+    .navbar-brand:hover {
+      color: black !important;
+
+    }
+
+    .navbar-toggler-icon {
+      background-color: black !important;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+      display: flex;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .navbar .navbar-brand {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+
+      .navbar .nav-link {
+        font-size: 18px;
+      }
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      background-color: silver;
+    }
+
+    .footer h4 {
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .linkedin:hover {
+      color: rgb(27, 133, 233);
+    }
+
+    .instagram:hover {
+      color: rgb(255, 0, 119);
+    }
+
+    .youtube:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .google:hover {
+      color: rgb(148, 0, 153);
+    }
+
+    .github:hover {
+      color: rgb(0, 255, 115);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/BLOGS/blogs_main.html">
+      <i class="fas fa-home" title="Home"> HOME </i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/loginpage.html">
+            <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+          </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">
+            <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">
+            <i class="fas fa-info-circle" title="About"> ABOUT </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>How to Build a Responsive Navigation Bar with a Dropdown Menu using JavaScript</h1>
+
+    <p>In this tutorial, we will learn how to create a responsive navigation bar with a dropdown menu using JavaScript.
+    </p>
+
+    <h2>HTML Structure</h2>
+    <p>First, let's define the HTML structure of our navigation bar:</p>
+
+    <div class="code">
+      <pre>
+      &lt;div class="navbar"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="dropdown"&gt;
+            &lt;a href="#"&gt;Dropdown&lt;/a&gt;
+            &lt;div class="dropdown-content"&gt;
+              &lt;a href="#"&gt;Option 1&lt;/a&gt;
+              &lt;a href="#"&gt;Option 2&lt;/a&gt;
+              &lt;a href="#"&gt;Option 3&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    </pre>
+    </div>
+
+    <h2>CSS Styling</h2>
+    <p>Next, let's add some CSS code to style our navigation bar and dropdown menu:</p>
+
+    <div class="code">
+      <pre>
+      /* CSS code for the navigation bar and dropdown menu */
+      /* ... */
+    </pre>
+    </div>
+
+    <h2>JavaScript Functionality</h2>
+    <p>Finally, we'll use JavaScript to add functionality to our dropdown menu:</p>
+
+    <div class="code">
+      <pre>
+      <script>
+        var dropdowns = document.getElementsByClassName("dropdown");
+        for (var i = 0; i < dropdowns.length; i++) {
+          dropdowns[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.getElementsByClassName("dropdown-content")[0];
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+      </script>
+    </pre>
+    </div>
+
+    <p>Now, when you click on the "Dropdown" item in the navigation bar, the dropdown menu will toggle its visibility.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>Congratulations! You have successfully built a responsive navigation bar with a dropdown menu using JavaScript.
+      Feel free to customize the styling and add more functionality to suit your needs.</p>
+  </div>
+
+  <section class="footer">
+    <h4 style="color: aliceblue;">ABOUT US</h4>
+    <P>Students from ADIT Vidyanagar Hyderabad <br>
+      Guidence by NAVEEN SIR</P>
+    <div class="icons">
+      <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+      <a href="" class="google"><i class="fab fa-google"></i></a>
+      <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+    </div>
+    <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

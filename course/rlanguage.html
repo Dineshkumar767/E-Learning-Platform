@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Programming</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS for responsive layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            /* Responsive CSS for smaller screens */
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>R Programming Language</h1>
+    </header>
+    <div class="container">
+
+        <p>R is a programming language and environment for statistical computing and graphics. It was developed by Ross
+            Ihaka and Robert Gentleman at the University of Auckland, New Zealand, and is currently maintained by the R
+            Development Core Team.</p>
+        <p>R provides a wide variety of statistical and graphical techniques, including linear and nonlinear modeling,
+            time series analysis, classification, clustering, and more. It has become a popular choice among
+            statisticians, data scientists, and researchers for data analysis and visualization.</p>
+        <h2>Key Features of R:</h2>
+        <ul>
+            <li><strong>Open-source and freely available:</strong> R is distributed under the GNU General Public
+                License, which means it can be freely used, modified, and distributed.</li>
+            <li><strong>Extensive library of statistical and graphical methods:</strong> R comes with a vast collection
+                of packages that provide various statistical and graphical techniques. These packages can be easily
+                installed and loaded into R for specific data analysis tasks.</li>
+            <li><strong>Support for data manipulation and analysis:</strong> R provides powerful tools for data
+                manipulation, transformation, and cleaning. It allows users to import data from various file formats and
+                databases, perform calculations, and generate summary statistics.</li>
+            <li><strong>Integration with other programming languages:</strong> R can be integrated with other
+                programming languages such as C/C++, Python, and Java. This integration enables users to leverage
+                existing code and libraries from different languages within their R projects.</li>
+            <li><strong>Community support and active development:</strong> R has a vibrant and active community of users
+                and developers. The R community regularly contributes new packages, provides support through forums and
+                mailing lists, and continues to enhance the language with updates and improvements.</li>
+        </ul>
+        <h2>Getting Started with R:</h2>
+        <ol>
+            <li><strong>Download and install R:</strong> Visit the official website of R (<a
+                    href="https://www.r-project.org/">https://www.r-project.org/</a>) and download the appropriate
+                version for your operating system. Follow the installation instructions provided.</li>
+            <li><strong>Choose an Integrated Development Environment (IDE):</strong> While R can be used from the
+                command line, using an IDE can greatly enhance your productivity. RStudio (<a
+                    href="https://www.rstudio.com/">https://www.rstudio.com/</a>) is a popular IDE for R that offers a
+                comprehensive set of tools for coding, debugging, and visualizing data.</li>
+            <li><strong>Learn R programming:</strong> Start learning R programming by following online tutorials, books,
+                or video courses. There are many resources available for beginners to get started with R. Some
+                recommended learning platforms include DataCamp (<a
+                    href="https://www.datacamp.com/">https://www.datacamp.com/</a>) and Coursera (<a
+                    href="https://www.coursera.org/">https://www.coursera.org/</a>).</li>
+        </ol>
+        <h2>Example Code:</h2>
+        <pre><code>
+# Hello World in R
+print("Hello, World!")
+</code></pre>
+
+        <h2>Conclusion</h2>
+        <p>R, with its extensive capabilities in statistical computing and graphics, has become an invaluable tool for
+            researchers, statisticians, and data scientists. Its open-source nature, rich library of statistical
+            methods, and active community support make it a preferred choice for data analysis and visualization. As you
+            embark on your journey with R, you'll discover its flexibility and power in handling diverse data analysis
+            tasks.</p>
+
+        <h2>Explore Further</h2>
+        <p>Deepen your exploration of R by exploring advanced statistical techniques, data visualization libraries, and
+            community-contributed packages. Here are some suggested steps:</p>
+        <ul>
+            <li>Visit the official R Project website: <a href="https://www.r-project.org/"
+                    target="_blank">https://www.r-project.org/</a> for documentation, downloads, and community
+                resources.</li>
+            <li>Explore the CRAN (Comprehensive R Archive Network) repository for a wide range of R packages: <a
+                    href="https://cran.r-project.org/" target="_blank">https://cran.r-project.org/</a>.</li>
+            <li>Enhance your R programming skills with online courses and tutorials on platforms like DataCamp and
+                Coursera.</li>
+            <li>Experiment with data visualization using packages like ggplot2 for creating expressive and customizable
+                plots.</li>
+            <li>Join R forums and mailing lists to connect with other R users, seek advice, and share your knowledge.
+            </li>
+            <li>Explore applications of R in specific domains such as bioinformatics, finance, or social sciences.</li>
+        </ul>
+
+    </div>
+    </div>
+
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

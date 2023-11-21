@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS code */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+
+            /* Responsive CSS for smaller screens */
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>HTML and CSS</h1>
+    </header>
+    <div class="container">
+
+
+        <p>HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are essential technologies for building
+            websites. HTML provides the structure and content, while CSS controls the presentation and layout.</p>
+
+        <h2>HTML:</h2>
+        <p>HTML is the standard markup language used to create webpages. It consists of a set of tags and elements that
+            define the structure and hierarchy of content on a webpage. HTML tags can include headings, paragraphs,
+            links, images, lists, tables, forms, and more.</p>
+
+        <h2>CSS:</h2>
+        <p>CSS is a stylesheet language that works alongside HTML. It allows you to style and format the HTML elements,
+            controlling aspects such as colors, fonts, sizes, layout, and positioning. CSS provides a way to create
+            visually appealing and consistent designs across webpages.</p>
+
+        <h2>Key Features of HTML and CSS:</h2>
+        <ul>
+            <li>HTML:
+                <ul>
+                    <li>Defines the structure and hierarchy of webpage content</li>
+                    <li>Uses tags and attributes to mark up different elements</li>
+                    <li>Supports multimedia elements, forms, tables, and more</li>
+                    <li>Allows linking to external resources, such as stylesheets and scripts</li>
+                </ul>
+            </li>
+            <li>CSS:
+                <ul>
+                    <li>Controls the visual presentation of HTML elements</li>
+                    <li>Offers a wide range of styling options, including colors, fonts, borders, backgrounds, and more
+                    </li>
+                    <li>Enables responsive design for adapting to different screen sizes and devices</li>
+                    <li>Allows the use of selectors to target specific elements for styling</li>
+                    <li>Supports advanced features like animations and transitions</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Sample HTML Code:</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+  &lt;p&gt;This is a sample paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>Sample CSS Code:</h2>
+        <pre><code>body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #0066cc;
+}
+
+p {
+  font-size: 16px;
+  color: #333333;
+}</code></pre>
+
+        <h2>Resources:</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/css/">CSS Tutorial</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs - HTML</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs - CSS</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-html">Codecademy HTML Course</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-css">Codecademy CSS Course</a></li>
+        </ul>
+        <h2>Additional Tips:</h2>
+        <ul>
+            <li>Explore modern HTML5 and CSS3 features for enhanced functionality and styling.</li>
+            <li>Practice responsive design principles to ensure your websites look great on various devices.</li>
+            <li>Stay updated on industry best practices and emerging trends in web development.</li>
+            <li>Consider learning JavaScript to add dynamic behavior and interactivity to your webpages.</li>
+        </ul>
+
+        <h2>Next Steps:</h2>
+        <p>Ready to dive deeper into web development? Consider learning JavaScript to add interactivity and dynamic
+            features to your websites. Explore front-end frameworks like React, Vue.js, or Angular for efficient
+            development, and venture into back-end technologies to create robust server-side applications.</p>
+
+    </div>
+    </div>
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

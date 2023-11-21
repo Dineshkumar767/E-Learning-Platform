@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <h2 class="logo" style="color: red;">TECH CREW</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="menu" onclick="hidemenu()"><i class="fas fa-times"></i>
+
+                </i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>&nbsp;&nbsp;&nbsp;
+                    <li><a href="about.html">ABOUT US</a></li>&nbsp;&nbsp;&nbsp;
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="menu" onclick="showmenu()"><i class="fas fa-bars"></i>
+            </i>
+        </nav>
+        <div class="text-box">
+            <h1>WANT TO BECOME A
+                <span class="text"></span>
+            </h1>
+            <P>JOIN US TO EXPLORE MANY DIFFERENT TYPES OF PROGRAMMING LANGUAGES
+                AND KNOW MORE ABOUT CODING AND WHAT IT IS USED FOR . </P>
+            <!-- <a href="" class="hero-btn">Visit us to Know More</a> -->
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-----course----->
+
+    <section class="course">
+        <h1>EXPLORE OUR WEBSITE FOR</h1>
+        <div class="row">
+            <div class="course-col">
+                <a href="course/courses.html">
+                    <img src="images/course.jpg" alt="">
+                    <div class="layer">
+                        <h3 style="color: aliceblue;">COURSES</h3>
+                        <p style="color: aliceblue;">
+                        <ol>
+                            <li style="color: aliceblue;">WEB DESIGN</li><br>
+                            <li style="color: aliceblue;">DEVELOPMENT</li><br>
+                            <li style="color: aliceblue;">MARKETING</li><br>
+                            <li style="color: aliceblue;">APP DESIGN</li><br>
+                        </ol>
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="course-col">
+                <a href="project/project.html">
+                    <img src="images/project.jpg" alt="">
+                    <div class="layer">
+                        <h3 style="color: aliceblue;">PROJECTS</h3>
+                        <p style="color: aliceblue;">
+                        <ol>
+                            <li style="color: aliceblue;">BEGINNER LEVEL</li><br>
+                            <li style="color: aliceblue;">INTERMIDEATE LEVEL</li><br>
+                            <li style="color: aliceblue;">ADVANCE LEVEL</li><br>
+                        </ol>
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="course-col">
+                <a href="BLOGS/blogs_main.html">
+                    <img src="images/blog.jpg" alt="">
+                    <div class="layer">
+                        <h3 style="color: aliceblue;">BLOGS</h3>
+                        <p style="color: aliceblue;">
+                        <ol>
+                            <li style="color: aliceblue;">DevOps</li><br>
+                            <li style="color: aliceblue;">PROGAMMING</li><br>
+                            <li style="color: aliceblue;">GAMING</li><br>
+                        </ol>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-----call to action------->
+
+    <section class="cta">
+        <h1>FOR MORE INFORMATION CONTACT US</h1>
+        <a href="contact.html" class="contact"> CONTACT US</a>
+    </section>
+
+
+
+    <!-----footer--->
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+
+
+    <div class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="scroll-to-bottom" onclick="scrollToBottom()">
+        <i class="fas fa-arrow-down"></i>
+    </div>
+
+
+
+    <!-- ------Javascript for Toggle Menu-------- -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+    <!-- Add Font Awesome CDN links if you haven't already added them -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <!-- Add the following JavaScript code at the end of the body section -->
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var scrollButtonTop = document.querySelector(".scroll-to-top");
+            var scrollButtonBottom = document.querySelector(".scroll-to-bottom");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButtonTop.style.display = "block";
+            } else {
+                scrollButtonTop.style.display = "none";
+            }
+
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                scrollButtonBottom.style.display = "none";
+            } else {
+                scrollButtonBottom.style.display = "block";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        function scrollToBottom() {
+            document.body.scrollTop = document.body.scrollHeight; // For Safari
+            document.documentElement.scrollTop = document.documentElement.scrollHeight; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <!-- Add the following HTML code at the end of the body section -->
+    <script src="content.js"></script>
+
+</body>
+
+</html>

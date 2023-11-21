@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>7 Alternatives to the &lt;div&gt; HTML Tag</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgb(62, 98, 245);
+      overflow: hidden;
+    }
+
+    .navbar .navbar-brand {
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+    .navbar .navbar-toggler-icon {
+      background-color: black !important;
+    }
+
+    .navbar .nav-item {
+      margin-right: 10px;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      font-size: 20px;
+    }
+
+    /* Increase the size of navbar icons */
+    .navbar .nav-link i {
+      font-size: 24px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      transition: color 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 25px;
+
+    }
+
+    .navbar .nav-link:hover {
+      color: black !important;
+      text-decoration: underline;
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+
+    }
+
+    .navbar-brand:hover {
+      color: black !important;
+
+    }
+
+    .navbar-toggler-icon {
+      background-color: black !important;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+      display: flex;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .navbar .navbar-brand {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+
+      .navbar .nav-link {
+        font-size: 18px;
+      }
+    }
+
+    .code-container {
+      background-color: #f9f9f9;
+      padding: 10px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    code {
+      color: #1e8449;
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      background-color: silver;
+    }
+
+    .footer h4 {
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .linkedin:hover {
+      color: rgb(27, 133, 233);
+    }
+
+    .instagram:hover {
+      color: rgb(255, 0, 119);
+    }
+
+    .youtube:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .google:hover {
+      color: rgb(148, 0, 153);
+    }
+
+    .github:hover {
+      color: rgb(0, 255, 115);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/BLOGS/blogs_main.html">
+      <i class="fas fa-home" title="Home"> HOME </i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/loginpage.html">
+            <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+          </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">
+            <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">
+            <i class="fas fa-info-circle" title="About"> ABOUT </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>7 Alternatives to the &lt;div&gt; HTML Tag</h1>
+
+    <p>The `
+    <div>` tag is commonly used for grouping and styling elements. However, there are times when using more semantically
+      meaningful tags can enhance the structure and accessibility of your HTML code. Here are 7 alternatives to the `
+      <div>` tag that you can use:</p>
+
+        <ol>
+          <li><strong>`<header>`:</strong> Used to define the header of a document or section.</li>
+          <li><strong>`<nav>`:</strong> Represents a section with navigation links.</li>
+          <li><strong>`<main>`:</strong> Represents the main content of a document.</li>
+          <li><strong>`<article>`:</strong> Defines a self-contained composition within a document.</li>
+          <li><strong>`<section>`:</strong> Represents a standalone section of a document.</li>
+          <li><strong>`<aside>`:</strong> Represents content that is tangentially related to the main content.</li>
+          <li><strong>`<footer>`:</strong> Defines the footer of a document or section.</li>
+        </ol>
+
+        <p>Here's an example of how these tags can be used:</p>
+
+        <div class="code-container">
+          <pre><code>&lt;header&gt;
+  &lt;h1&gt;Page Title&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#home"&gt;Home&lt;/a&gt;
+    &lt;a href="#about"&gt;About&lt;/a&gt;
+    &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;Article content goes here...&lt;/p&gt;
+  &lt;/article&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;Section content goes here...&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;aside&gt;
+  &lt;p&gt;Sidebar content goes here...&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Footer content goes here...&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+        </div>
+
+        <p>By using these alternative tags, you can provide more meaning to the structure of your HTML code and improve
+          the accessibility and readability of your web pages.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <h4 style="color: aliceblue;">ABOUT US</h4>
+    <P>Students from ADIT Vidyanagar Hyderabad <br>
+      Guidence by NAVEEN SIR</P>
+    <div class="icons">
+      <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+          class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+      <a href="" class="google"><i class="fab fa-google"></i></a>
+      <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+    </div>
+    <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

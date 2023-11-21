@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+    color: #333;
+}
+
+.javascript {
+    color: #007bff;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: silver;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.linkedin:hover {
+    color: rgb(27, 133, 233);
+}
+
+.instagram:hover {
+    color: rgb(255, 0, 119);
+}
+
+.youtube:hover {
+    color: rgb(255, 0, 0);
+}
+
+.google:hover {
+    color: rgb(148, 0, 153);
+}
+
+.github:hover {
+    color: rgb(0, 255, 115);
+}
+
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(62, 98, 245);
+    overflow: hidden;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.navbar .navbar-toggler-icon {
+    background-color: black !important;
+}
+
+.navbar .nav-item {
+    margin-right: 10px;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-size: 20px;
+}
+
+/* Increase the size of navbar icons */
+.navbar .nav-link i {
+    font-size: 24px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.navbar .nav-link:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 30px;
+
+}
+
+.navbar-brand:hover {
+    color: black !important;
+
+}
+
+.navbar-toggler-icon {
+    background-color: black !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .navbar .nav-link {
+        font-size: 18px;
+    }
+}

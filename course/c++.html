@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS code */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+
+            /* Responsive CSS for smaller screens */
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>C++</h1>
+    </header>
+    <div class="container">
+
+
+        <p>C++ is a powerful and widely used programming language known for its efficiency, performance, and
+            versatility. It is an extension of the C programming language and is commonly used for systems programming,
+            game development, embedded systems, and high-performance applications.</p>
+
+        <h2>Features of C++:</h2>
+        <ul>
+            <li><strong>Object-oriented programming:</strong> C++ supports the principles of object-oriented
+                programming, such as encapsulation, inheritance, and polymorphism.</li>
+            <li><strong>Efficiency and performance:</strong> C++ allows low-level control and direct memory
+                manipulation, enabling high-performance code execution.</li>
+            <li><strong>Standard template library (STL):</strong> C++ provides a rich set of libraries and containers
+                for common data structures and algorithms.</li>
+            <li><strong>Multi-paradigm:</strong> C++ supports procedural, object-oriented, and generic programming
+                paradigms.</li>
+            <li><strong>Portability:</strong> C++ code can be compiled and run on various platforms, making it highly
+                portable.</li>
+            <li><strong>Compatibility with C:</strong> C++ is backward compatible with C, allowing seamless integration
+                of existing C code.</li>
+            <li><strong>Memory management:</strong> C++ provides manual memory management through features like
+                pointers, as well as automatic memory management through smart pointers and the RAII (Resource
+                Acquisition Is Initialization) principle.</li>
+            <li><strong>Exception handling:</strong> C++ supports exception handling, allowing graceful handling of
+                errors and exceptional situations.</li>
+        </ul>
+
+        <h2>Sample C++ Code:</h2>
+        <pre><code>#include &lt;iostream&gt;
+
+int main() {
+  std::cout << "Hello, World!" << std::endl;
+  return 0;
+}</code></pre>
+
+        <h2>Applications of C++:</h2>
+        <p>C++ finds applications in various domains and industries, including:</p>
+        <ul>
+            <li><strong>Systems programming:</strong> C++ is often used for developing operating systems, device
+                drivers, and system-level software.</li>
+            <li><strong>Game development:</strong> Many game engines and frameworks, such as Unreal Engine and Unity,
+                are written in C++. It provides the necessary performance and control for graphics-intensive
+                applications.</li>
+            <li><strong>Embedded systems:</strong> C++ is widely used in embedded systems programming, where efficiency
+                and direct hardware access are crucial.</li>
+            <li><strong>High-performance computing:</strong> C++ is employed in applications that require heavy
+                computation and optimization, such as scientific simulations and numerical analysis.</li>
+            <li><strong>Financial software:</strong> C++ is used in developing high-frequency trading systems,
+                algorithmic trading platforms, and financial modeling applications.</li>
+        </ul>
+
+        <h2>Resources:</h2>
+        <ul>
+            <li><a href="https://isocpp.org/">C++ Foundation</a> - The official website for the C++ programming language
+            </li>
+            <li><a href="https://en.cppreference.com/">C++ Reference</a> - Comprehensive documentation and reference for
+                C++</li>
+            <li><a href="https://www.learncpp.com/">LearnCpp.com</a> - Online tutorial for learning C++</li>
+            <li><a href="https://www.cplusplus.com/doc/tutorial/">cplusplus.com</a> - C++ tutorials and resources</li>
+            <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">Codecademy C++ Course</a> - Interactive C++
+                course</li>
+        </ul>
+
+        <script>
+            // JavaScript code
+            document.addEventListener('DOMContentLoaded', function () {
+                console.log('Page loaded');
+            });
+        </script>
+    </div>
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

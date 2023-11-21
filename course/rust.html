@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Programming Language</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS code */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+
+            /* Responsive CSS for smaller screens */
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Rust Programming Language</h1>
+    </header>
+    <div class="container">
+        <p>Rust is a systems programming language that emphasizes performance, reliability, and safety. It was created
+            by Mozilla and has gained popularity for its powerful features and strict compiler checks.</p>
+
+        <h2>Key Features of Rust:</h2>
+        <ul>
+            <li>Memory safety without garbage collection</li>
+            <li>Fearless concurrency</li>
+            <li>Zero-cost abstractions</li>
+            <li>Pattern matching</li>
+            <li>Trait-based generics</li>
+        </ul>
+
+        <h2>Sample Code:</h2>
+        <pre><code>fn main() {
+    println!("Hello, Rust!");
+}</code></pre>
+
+        <h2>Resources:</h2>
+        <ul>
+            <li><a href="https://www.rust-lang.org/">Official Rust Website</a></li>
+            <li><a href="https://doc.rust-lang.org/book/">The Rust Programming Language (Book)</a></li>
+            <li><a href="https://play.rust-lang.org/">Rust Playground</a></li>
+            <li><a href="https://www.rust-lang.org/learning">Learning Resources</a></li>
+            <li><a href="https://www.rust-lang.org/community">Community</a></li>
+        </ul>
+
+        <h2>Why Choose Rust?</h2>
+        <p>Rust is known for its strong memory safety guarantees and zero-cost abstractions, which make it an excellent
+            choice for systems programming. Its strict compiler checks help catch bugs at compile time and eliminate
+            many common programming errors.</p>
+
+        <p>Rust also provides powerful concurrency primitives and built-in support for multi-threading, enabling
+            developers to write safe and efficient concurrent code.</p>
+
+        <h2>Example Projects Built with Rust:</h2>
+        <ul>
+            <li><a href="https://github.com/rust-lang/rust">Rust Compiler</a></li>
+            <li><a href="https://github.com/actix/actix-web">Actix-Web</a> - A powerful, secure, and fast web framework
+            </li>
+            <li><a href="https://github.com/servo/servo">Servo</a> - A modern, high-performance browser engine</li>
+        </ul>
+    </div>
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

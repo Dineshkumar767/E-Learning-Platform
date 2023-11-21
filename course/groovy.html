@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groovy Programming Language</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Groovy Programming Language</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>Groovy is a dynamic, object-oriented programming language that runs on the Java Virtual Machine (JVM). It
+                is designed to enhance and simplify Java development by providing additional features and syntactic
+                sugar. Groovy is compatible with existing Java code, allowing seamless integration with Java libraries
+                and frameworks.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Simplified Syntax: Groovy offers a concise and expressive syntax that reduces boilerplate code and
+                    makes it easier to read and write compared to Java. It supports features such as closures, optional
+                    typing, and native support for lists, maps, and regular expressions.</li>
+                <li>Dynamic Typing: Groovy allows dynamic typing, meaning variable types can be determined at runtime.
+                    This provides flexibility and enables rapid prototyping and scripting capabilities.</li>
+                <li>Seamless Java Integration: Groovy is fully compatible with Java, allowing developers to leverage
+                    existing Java libraries and frameworks. Groovy code can call Java code and vice versa, making it
+                    easy to integrate Groovy into Java projects.</li>
+                <li>DSL Support: Groovy provides a powerful Domain-Specific Language (DSL) capability. It allows
+                    developers to create concise and readable syntax specific to their application domain, improving
+                    code maintainability and expressiveness.</li>
+                <li>Metaprogramming: Groovy supports metaprogramming, allowing developers to modify or extend the
+                    behavior of existing classes or add new methods dynamically. This enables powerful runtime
+                    customization and extension of applications.</li>
+            </ul>
+            <h2>Code Example</h2>
+            <pre><code>
+                // Hello World in Groovy
+                class HelloWorld {
+                    static void main(String[] args) {
+                        println "Hello, World!"
+                    }
+                }
+                
+                // Defining a closure in Groovy
+                def sayHello = { name ->
+                    println "Hello, ${name}!"
+                }
+                
+                sayHello("John") // Output: Hello, John
+                
+                // Working with Lists in Groovy
+                def fruits = ['Apple', 'Banana', 'Orange']
+                println "List of Fruits: ${fruits}"
+                
+                // Iterating through the list
+                fruits.each { fruit ->
+                    println "I love ${fruit}s!"
+                }
+                
+                // Using built-in methods
+                def uppercasedFruits = fruits.collect { it.toUpperCase() }
+                println "Uppercased Fruits: ${uppercasedFruits}"
+                
+                // Working with Maps in Groovy
+                def person = [
+                    name: 'Alice',
+                    age: 30,
+                    city: 'Wonderland'
+                ]
+                
+                println "Person: ${person}"
+                
+                // Accessing map values
+                println "${person.name} is ${person.age} years old and lives in ${person.city}."
+                </code></pre>
+            <h2>Conclusion</h2>
+            <p>Groovy offers a powerful and flexible alternative to traditional Java development. With its simplified
+                syntax, dynamic typing, and seamless integration with Java, Groovy empowers developers to build robust
+                and expressive applications for the Java Virtual Machine.</p>
+
+            <h2>Explore Further</h2>
+            <p>Continue your exploration of Groovy by delving into advanced topics, community resources, and real-world
+                applications. Here are some suggested steps:</p>
+            <ul>
+                <li>Check out the official <a href="https://groovy-lang.org/documentation.html" target="_blank">Groovy
+                        Documentation</a> for in-depth information.</li>
+                <li>Join the Groovy community forums and mailing lists to connect with other developers and get
+                    assistance.</li>
+                <li>Explore Groovy-based frameworks like <a href="https://grails.org/" target="_blank">Grails</a> for
+                    web development.</li>
+                <li>Experiment with Groovy scripting in various projects to fully leverage its dynamic and concise
+                    features.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

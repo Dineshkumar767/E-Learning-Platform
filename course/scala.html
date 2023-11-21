@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scala Programming</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS for responsive layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            /* Responsive CSS for smaller screens */
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Scala Programming Language</h1>
+    </header>
+    <div class="container">
+
+        <p>Scala is a modern programming language that combines object-oriented and functional programming concepts. It
+            is designed to be concise, expressive, and scalable, making it suitable for building a wide range of
+            applications.</p>
+        <p>Scala runs on the Java Virtual Machine (JVM) and is fully interoperable with Java. It provides advanced
+            features such as pattern matching, higher-order functions, type inference, and immutability by default.</p>
+        <h2>Key Features of Scala:</h2>
+        <ul>
+            <li>Object-oriented programming (OOP) with support for classes, objects, and inheritance</li>
+            <li>Functional programming (FP) with first-class functions, immutable data structures, and higher-order
+                functions</li>
+            <li>Static typing with type inference</li>
+            <li>Concurrency and parallelism support with actors and futures</li>
+            <li>Pattern matching for powerful and concise data manipulation</li>
+            <li>Interoperability with Java and access to Java libraries</li>
+        </ul>
+        <h2>Getting Started with Scala:</h2>
+        <ol>
+            <li>Download and install the Scala programming language from the official website: <a
+                    href="https://www.scala-lang.org/">https://www.scala-lang.org/</a></li>
+            <li>Set up the Scala development environment by installing a build tool such as sbt or Maven</li>
+            <li>Choose a text editor or Integrated Development Environment (IDE) for writing Scala code. Some popular
+                choices include Visual Studio Code with the Scala Metals extension, IntelliJ IDEA, and Eclipse with the
+                Scala IDE plugin.</li>
+            <li>Start learning Scala programming by following online tutorials, reading books, or taking courses</li>
+        </ol>
+        <h2>Example Code:</h2>
+        <pre><code>
+// Scala Hello World
+object HelloWorld {
+  def main(args: Array[String]): Unit = {
+    println("Hello, Scala!")
+  }
+}
+
+// Scala Classes and Case Classes
+class Person(var name: String, var age: Int)
+
+case class Book(title: String, author: String)
+
+val person = new Person("John Doe", 30)
+println(s"Name: ${person.name}, Age: ${person.age}")
+
+val book = Book("Scala Programming", "Jane Smith")
+println(s"Title: ${book.title}, Author: ${book.author}")
+</code></pre>
+        <h2>Conclusion</h2>
+        <p>Scala's fusion of object-oriented and functional programming principles, coupled with its compatibility with
+            Java, makes it a versatile language for modern software development. With features like static typing,
+            pattern matching, and concurrency support, Scala empowers developers to build scalable and expressive
+            applications.</p>
+
+        <h2>Explore Further</h2>
+        <p>Continue your journey into Scala programming by exploring additional resources and engaging with the Scala
+            community. Here are some recommended steps:</p>
+        <ul>
+            <li>Visit the official Scala website: <a href="https://www.scala-lang.org/"
+                    target="_blank">https://www.scala-lang.org/</a> for official documentation, tutorials, and community
+                forums.</li>
+            <li>Experiment with different Scala development environments, such as sbt, IntelliJ IDEA, or Visual Studio
+                Code with the Scala Metals extension.</li>
+            <li>Deepen your understanding of Scala's advanced features, including pattern matching, type classes, and
+                implicit conversions.</li>
+            <li>Participate in Scala forums, mailing lists, or social media groups to connect with other Scala
+                enthusiasts, seek advice, and share your knowledge.</li>
+            <li>Explore Scala frameworks and libraries for web development, such as Play Framework, and delve into
+                functional programming concepts with libraries like Cats or Scalaz.</li>
+        </ul>
+    </div>
+    </div>
+
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

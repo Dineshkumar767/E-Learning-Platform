@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            width: 400px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #337ab7;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        .radio-inline {
+            margin-right: 10px;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #337ab7;
+            border-color: #337ab7;
+            color: #ffffff;
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        .back-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .back-button button {
+            background-color: skyblue;
+            border: none;
+            color: #fff;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Login Form</h1>
+            <form action="connect.php" method="post">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" />
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <div>
+                        <label for="male" class="radio-inline"><input type="radio" name="gender" value="m"
+                                id="male" />Male</label>
+                        <label for="female" class="radio-inline"><input type="radio" name="gender" value="f"
+                                id="female" />Female</label>
+                        <label for="others" class="radio-inline"><input type="radio" name="gender" value="o"
+                                id="others" />Others</label>
+                    </div><br>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" />
+                </div>
+                <div class="form-group password-container">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" />
+                    <span class="password-toggle" onclick="togglePasswordVisibility()">&#128065;</span>
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="number" class="form-control" id="number" name="number" />
+                </div><br>
+                <input type="submit" class="btn btn-primary" value="Submit" name="submit" />
+            </form>
+            <div class="back-button">
+                <button><a href="index.html" style=" color:#fff; text-decoration: none;">Back</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var passwordToggle = document.querySelector(".password-toggle");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordToggle.innerHTML = "&#128064;";
+            } else {
+                passwordInput.type = "password";
+                passwordToggle.innerHTML = "&#128065;";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

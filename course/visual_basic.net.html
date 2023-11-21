@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VB.NET Programming Language</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>VB.NET Programming Language</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>VB.NET (Visual Basic .NET) is an object-oriented programming language developed by Microsoft. It is based
+                on the Visual Basic language, but with added features and improvements. VB.NET is part of the .NET
+                framework and is used to build Windows applications, web applications, and more.</p>
+
+            <h2>Features</h2>
+            <ul>
+                <li>Object-oriented programming: VB.NET supports object-oriented programming principles, including
+                    classes, inheritance, and polymorphism.</li>
+                <li>Event-driven programming: VB.NET is designed for event-driven programming, allowing developers to
+                    respond to user actions and system events.</li>
+                <li>Integration with .NET framework: VB.NET seamlessly integrates with the .NET framework, providing
+                    access to a wide range of libraries and APIs.</li>
+                <li>Garbage collection: VB.NET includes automatic memory management through garbage collection, reducing
+                    the need for manual memory management.</li>
+                <li>Easy to learn: VB.NET is known for its simplicity and ease of use, making it an excellent choice for
+                    beginners.</li>
+                <li>Database integration: VB.NET provides robust support for connecting to databases, enabling
+                    developers to build database-driven applications.</li>
+                <li>Windows Forms: VB.NET includes Windows Forms, a powerful framework for creating graphical user
+                    interfaces for Windows applications.</li>
+                <li>Web development: VB.NET can be used for web development with technologies like ASP.NET, allowing
+                    developers to build dynamic web applications.</li>
+                <li>Interop with COM: VB.NET supports interoperability with existing COM components, enabling developers
+                    to leverage legacy code and systems.</li>
+            </ul>
+
+            <h2>Code Example</h2>
+            <pre><code>
+    Imports System
+    
+    Module Program
+        Sub Main(args As String())
+            Dim message As String = "Hello, VB.NET!"
+            Console.WriteLine(message)
+        End Sub
+    End Module
+            </code></pre>
+
+            <h2>Conclusion</h2>
+            <p>VB.NET is a versatile and powerful programming language that offers a wide range of features, making it
+                suitable for various application development scenarios. With its emphasis on simplicity, ease of use,
+                and integration with the .NET framework, VB.NET is an excellent choice for both beginners and
+                experienced developers. Whether building Windows applications, web applications, or leveraging database
+                connectivity, VB.NET provides a robust platform for software development.</p>
+
+            <h2>Explore Further</h2>
+            <p>Continue your exploration of VB.NET by delving into advanced topics, leveraging the .NET ecosystem, and
+                staying updated on the latest developments. Here are some suggested steps:</p>
+            <ul>
+                <li>Explore Microsoft's official documentation and resources for <a
+                        href="https://docs.microsoft.com/en-us/dotnet/visual-basic/" target="_blank">VB.NET</a>.</li>
+                <li>Experiment with Windows Forms to create interactive graphical user interfaces for your applications.
+                </li>
+                <li>Explore web development with VB.NET using ASP.NET to build dynamic and responsive web applications.
+                </li>
+                <li>Join VB.NET communities, forums, and discussions to connect with other developers and share
+                    knowledge.</li>
+                <li>Explore advanced VB.NET features such as LINQ (Language-Integrated Query) and asynchronous
+                    programming for enhanced functionality.</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

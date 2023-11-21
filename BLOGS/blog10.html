@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>How to Use MySQL Stored Procedures to Simplify Database Operations</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgb(62, 98, 245);
+      overflow: hidden;
+    }
+
+    .navbar .navbar-brand {
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+    .navbar .navbar-toggler-icon {
+      background-color: black !important;
+    }
+
+    .navbar .nav-item {
+      margin-right: 10px;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      font-size: 20px;
+    }
+
+    /* Increase the size of navbar icons */
+    .navbar .nav-link i {
+      font-size: 24px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      transition: color 0.3s ease-in-out;
+      text-decoration: none;
+      font-size: 25px;
+
+    }
+
+    .navbar .nav-link:hover {
+      color: black !important;
+      text-decoration: underline;
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+
+    }
+
+    .navbar-brand:hover {
+      color: black !important;
+
+    }
+
+    .navbar-toggler-icon {
+      background-color: black !important;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+      display: flex;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .navbar .navbar-brand {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+
+      .navbar .nav-link {
+        font-size: 18px;
+      }
+    }
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .content {
+      margin-bottom: 20px;
+    }
+
+    .code {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      overflow: auto;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      background-color: silver;
+    }
+
+    .footer h4 {
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .linkedin:hover {
+      color: rgb(27, 133, 233);
+    }
+
+    .instagram:hover {
+      color: rgb(255, 0, 119);
+    }
+
+    .youtube:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .google:hover {
+      color: rgb(148, 0, 153);
+    }
+
+    .github:hover {
+      color: rgb(0, 255, 115);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/BLOGS/blogs_main.html">
+      <i class="fas fa-home" title="Home"> HOME </i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/loginpage.html">
+            <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+          </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">
+            <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">
+            <i class="fas fa-info-circle" title="About"> ABOUT </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>How to Use MySQL Stored Procedures to Simplify Database Operations</h1>
+
+    <div class="content">
+      <h2>Introduction to Stored Procedures</h2>
+      <p>A stored procedure is a set of precompiled SQL statements that can be stored and executed on the database
+        server. MySQL supports stored procedures, which can simplify complex database operations and enhance
+        performance. Here's how you can use stored procedures in MySQL:</p>
+    </div>
+
+    <div class="content">
+      <h2>Create a Stored Procedure</h2>
+      <p>To create a stored procedure in MySQL, you can use the `CREATE PROCEDURE` statement. Here's an example:</p>
+
+      <div class="code">
+        <pre>
+          DELIMITER //
+          CREATE PROCEDURE GetCustomers()
+          BEGIN
+            SELECT * FROM customers;
+          END //
+          DELIMITER ;
+        </pre>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Execute a Stored Procedure</h2>
+      <p>You can execute a stored procedure in MySQL using the `CALL` statement. Here's an example:</p>
+
+      <div class="code">
+        <pre>
+          CALL GetCustomers();
+        </pre>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Pass Parameters to a Stored Procedure</h2>
+      <p>Stored procedures can also accept parameters for more dynamic functionality. Here's an example of a stored
+        procedure that takes a parameter:</p>
+
+      <div class="code">
+        <pre>
+          DELIMITER //
+          CREATE PROCEDURE GetCustomerByID(IN customerID INT)
+          BEGIN
+            SELECT * FROM customers WHERE id = customerID;
+          END //
+          DELIMITER ;
+        </pre>
+      </div>
+
+      <p>To execute the stored procedure with a parameter, use the `CALL` statement as follows:</p>
+
+      <div class="code">
+        <pre>
+          CALL GetCustomerByID(1);
+        </pre>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Benefits of Using Stored Procedures</h2>
+      <ul>
+        <li>Improved performance: Stored procedures are precompiled and stored on the database server, reducing network
+          traffic and enhancing performance.</li>
+        <li>Code reusability: Stored procedures can be reused across different parts of your application, reducing code
+          duplication.</li>
+        <li>Enhanced security: Stored procedures can provide an additional layer of security by restricting direct
+          access to database tables and allowing controlled access through the procedures.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+<section class="footer">
+  <h4 style="color: aliceblue;">ABOUT US</h4>
+  <P>Students from ADIT Vidyanagar Hyderabad <br>
+    Guidence by NAVEEN SIR</P>
+  <div class="icons">
+    <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+        class="fab fa-linkedin"></i></a>
+    <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+        class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+    <a href="" class="google"><i class="fab fa-google"></i></a>
+    <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+  </div>
+  <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>

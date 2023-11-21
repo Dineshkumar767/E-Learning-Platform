@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Programming</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS for responsive layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            /* Responsive CSS for smaller screens */
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Go Programming Language</h1>
+    </header>
+    <div class="container">
+
+        <p>Go, also known as Golang, is an open-source programming language developed by Google. It is designed to be
+            efficient, reliable, and simple, making it a popular choice for building scalable and high-performance
+            applications.</p>
+        <p>Go combines the ease of programming of interpreted languages like Python with the efficiency and safety of
+            statically-typed compiled languages like C++. It features a concise and expressive syntax, built-in support
+            for concurrent programming, and a robust standard library.</p>
+        <h2>Key Features of Go:</h2>
+        <ul>
+            <li>Concurrency support with goroutines and channels</li>
+            <li>Efficient garbage collection</li>
+            <li>Static typing and strong type safety</li>
+            <li>Built-in package management with Go modules</li>
+            <li>Fast compilation times</li>
+            <li>Extensive standard library</li>
+        </ul>
+        <h2>Getting Started with Go:</h2>
+        <ol>
+            <li>Download and install Go from the official website: <a href="https://golang.org/">https://golang.org/</a>
+            </li>
+            <li>Set up the Go development environment by configuring your PATH and GOPATH environment variables</li>
+            <li>Choose a text editor or Integrated Development Environment (IDE) for writing Go code. Some popular
+                choices include Visual Studio Code with the Go extension, GoLand, and Atom with the go-plus package.
+            </li>
+            <li>Start learning Go programming by following online tutorials, reading books, or taking courses</li>
+        </ol>
+        <h2>Example Code:</h2>
+        <pre><code>
+package main
+
+import "fmt"
+
+func main() {
+    // Hello World
+    fmt.Println("Hello, Go!")
+
+    // Variables and Types
+    var name string = "John"
+    age := 30
+    fmt.Printf("My name is %s and I'm %d years old.\n", name, age)
+
+    // Conditionals
+    if age >= 18 {
+        fmt.Println("You are an adult.")
+    } else {
+        fmt.Println("You are a minor.")
+    }
+
+    // Loops
+    for i := 1; i <= 5; i++ {
+        fmt.Println(i)
+    }
+
+    // Arrays and Slices
+    numbers := []int{1, 2, 3, 4, 5}
+    fmt.Println(numbers)
+
+    // Functions
+    result := add(10, 20)
+    fmt.Println("Sum:", result)
+}
+
+func add(a, b int) int {
+    return a + b
+}
+</code></pre>
+
+        <h2>Conclusion</h2>
+        <p>Go, with its focus on simplicity, efficiency, and concurrent programming, offers a robust platform for
+            developing scalable and performant applications. Its expressive syntax, built-in support for concurrency,
+            and efficient compilation make it well-suited for a variety of use cases. As you explore Go further, you'll
+            discover its strengths in building reliable and high-performance software.</p>
+
+        <h2>Explore Further</h2>
+        <p>Continue your exploration of Go by delving into its advanced features, tools, and the broader Go ecosystem.
+            Here are some suggested steps:</p>
+        <ul>
+            <li>Visit the official Go website: <a href="https://golang.org/" target="_blank">https://golang.org/</a> for
+                comprehensive documentation, tutorials, and the latest updates.</li>
+            <li>Experiment with Go in different development environments, such as Visual Studio Code, GoLand, or Atom
+                with the go-plus package.</li>
+            <li>Explore Go's concurrency model with goroutines and channels to build concurrent applications
+                efficiently.</li>
+            <li>Learn about Go modules for effective package management in your projects.</li>
+            <li>Join Go communities, forums, and discussions to connect with other developers, seek advice, and share
+                your experiences.</li>
+            <li>Explore popular Go frameworks and libraries, such as Gin for web development or Cobra for building
+                command-line applications.</li>
+        </ul>
+
+    </div>
+    </div>
+
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

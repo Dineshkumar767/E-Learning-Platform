@@ -1,0 +1,15 @@
+JavaScript Arrays and Their Manipulation
+Create a Simple HTML and PHP Form
+How to Make a Database Read-Only in MySQL
+How to Upload Files with HTML
+How Functions Work in JavaScript
+What is PHP? How to Write Your First PHP Program
+How to Start Using MongoDB – Database Setup for Beginners
+What is Cross-Site Request Forgery (CSRF)? in Laravel
+How Logging Works in Laravel Applications
+How to Use MySQL Stored Procedures to Simplify Database Operations
+Introduction to Laravel APIs – Security, Features, and More
+How to Build a Responsive Navigation Bar with a Dropdown Menu using JavaScript
+How to Upload Files with JavaScript
+HTML Link – How to Turn an Image into a Link and Nest Links Inside Paragraphs
+7 Alternatives to the <div> HTML Tag

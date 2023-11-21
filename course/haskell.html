@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haskell Programming</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS for responsive layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(62, 98, 245);
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar .nav-item {
+            margin-right: 10px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 20px;
+        }
+
+        /* Increase the size of navbar icons */
+        .navbar .nav-link i {
+            font-size: 24px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        .navbar .nav-link:hover {
+            color: black !important;
+            text-decoration: underline;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+
+        }
+
+        .navbar-brand:hover {
+            color: black !important;
+
+        }
+
+        .navbar-toggler-icon {
+            background-color: black !important;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar .navbar-brand {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+
+            .navbar .nav-link {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            /* Responsive CSS for smaller screens */
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            background-color: silver;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .linkedin:hover {
+            color: rgb(27, 133, 233);
+        }
+
+        .instagram:hover {
+            color: rgb(255, 0, 119);
+        }
+
+        .youtube:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .google:hover {
+            color: rgb(148, 0, 153);
+        }
+
+        .github:hover {
+            color: rgb(0, 255, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/course/courses.html">
+            <i class="fas fa-home" title="Home"> HOME </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/loginpage.html">
+                        <i class="fas fa-sign-in-alt" title="Login"> LOG IN </i>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class="fas fa-envelope" title="Contact"> CONTACT </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                        <i class="fas fa-info-circle" title="About"> ABOUT </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Haskell Programming Language</h1>
+    </header>
+    <div class="container">
+
+        <p>Haskell is a functional programming language known for its strong type system, purity, and mathematical
+            foundations. It was first designed in the 1980s and has since gained popularity among developers interested
+            in writing concise, correct, and efficient code.</p>
+        <p>Haskell emphasizes immutability, referential transparency, and lazy evaluation. It has a powerful type
+            inference system that helps catch errors at compile time and facilitates safer and more robust code.</p>
+        <h2>Key Features of Haskell:</h2>
+        <ul>
+            <li>Functional programming paradigm with first-class functions and higher-order functions</li>
+            <li>Immutable data structures and referential transparency</li>
+            <li>Static typing with a powerful type system and type inference</li>
+            <li>Laziness and delayed evaluation for increased efficiency</li>
+            <li>Pattern matching and algebraic data types for expressive data manipulation</li>
+            <li>Concurrency and parallelism support with lightweight threads and software transactional memory</li>
+            <li>Strong emphasis on purity and absence of side effects</li>
+        </ul>
+        <h2>Getting Started with Haskell:</h2>
+        <ol>
+            <li>Install Haskell on your system by downloading the appropriate distribution for your operating system
+                from the official Haskell website: <a href="https://www.haskell.org/">https://www.haskell.org/</a></li>
+            <li>Set up the Haskell development environment by installing a suitable text editor or Integrated
+                Development Environment (IDE). Some popular choices include Visual Studio Code with the Haskell
+                extension, IntelliJ IDEA with the Haskell plugin, or Emacs with the Haskell mode.</li>
+            <li>Start learning Haskell programming by following online tutorials, reading books, or exploring the
+                Haskell documentation available on the official website</li>
+        </ol>
+        <h2>Example Code:</h2>
+        <pre><code>
+-- Haskell Hello World
+main :: IO ()
+main = putStrLn "Hello, Haskell!"
+
+-- Haskell Functions and Type Declarations
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Haskell Lists and List Comprehensions
+numbers :: [Int]
+numbers = [1, 2, 3, 4, 5]
+
+squaredNumbers :: [Int]
+squaredNumbers = [x * x | x <- numbers]
+
+-- Haskell Pattern Matching and Algebraic Data Types
+data Person = Person String Int
+
+getPersonName :: Person -> String
+getPersonName (Person name _) = name
+
+getPersonAge :: Person -> Int
+getPersonAge (Person _ age) = age
+
+person :: Person
+person = Person "John" 30
+
+-- Haskell Recursion and Higher-Order Functions
+factorial :: Int -> Int
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
+</code></pre>
+        <h2>Conclusion</h2>
+        <p>Haskell stands out as a powerful functional programming language with a focus on correctness, expressiveness,
+            and efficiency. Its unique features, such as immutability, laziness, and strong type inference, contribute
+            to creating robust and concise code. Haskell's emphasis on mathematical foundations and the functional
+            programming paradigm makes it an intriguing language for developers seeking a different approach to software
+            development.</p>
+
+        <h2>Explore Further</h2>
+        <p>Delve deeper into Haskell and enhance your programming skills with additional resources and community
+            engagement. Here are some suggested steps:</p>
+        <ul>
+            <li>Visit the official Haskell website: <a href="https://www.haskell.org/"
+                    target="_blank">https://www.haskell.org/</a> for documentation, tutorials, and community forums.
+            </li>
+            <li>Experiment with different Haskell development environments, such as Visual Studio Code, IntelliJ IDEA,
+                or Emacs, to find the one that suits your preferences.</li>
+            <li>Explore advanced Haskell topics, including monads, type classes, and functional programming patterns.
+            </li>
+            <li>Join Haskell communities and forums to connect with other Haskell enthusiasts, ask questions, and share
+                your experiences.</li>
+            <li>Consider contributing to open-source Haskell projects to gain practical experience and collaborate with
+                the Haskell community.</li>
+        </ul>
+    </div>
+    </div>
+    <section class="footer">
+        <h4 style="color: aliceblue;">ABOUT US</h4>
+        <P>Students from ADIT Vidyanagar Hyderabad <br>
+            Guidence by NAVEEN SIR</P>
+        <div class="icons">
+            <a href="https://in.linkedin.com/in/dineshkumar-ajmeera-800991271" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/dinesh_aj767?igshid=ZDdkNTZiNTM= " class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@dineshkumarajmeera" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="" class="google"><i class="fab fa-google"></i></a>
+            <a href="https://github.com/Dineshkumar767" class="github"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fas fa-heart"></i> by TECH CREW TEAM</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
